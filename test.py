@@ -45,11 +45,11 @@ def main():
     params = {
         'objective': 'multi:softmax',  # 다중 클래스 분류 문제
         'num_class': 3,                # Iris 데이터셋의 클래스 개수
-        'learning_rate': 0.1,
-        'n_estimators': 100,           # 트리의 개수
-        'max_depth': 3,                # 각 트리의 최대 깊이
-        'subsample': 0.8,
-        'colsample_bytree': 0.8,
+        'learning_rate': 0.08,
+        'n_estimators': 150,           # 트리의 개수
+        'max_depth': 6,                # 각 트리의 최대 깊이
+        'subsample': 0.9,
+        'colsample_bytree': 0.9,
         'eval_metric': 'mlogloss',     # 다중 분류용 평가 지표 (학습 중 로깅됨)
         'seed': 42
     }
